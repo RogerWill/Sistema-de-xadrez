@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d28555a2-907d-4e31-88b3-05ca7ab368c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Jogo/BoardException.java" afterDir="false" />
+    <list default="true" id="d28555a2-907d-4e31-88b3-05ca7ab368c0" name="Changes" comment="programação defensiva e BoardException">
+      <change afterPath="$PROJECT_DIR$/src/Xadrez/ChessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Xadrez/PosicaoXadrez.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jogo/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogo/Tabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Xadrez/PartidaXadrez.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xadrez/PartidaXadrez.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <workItem from="1657294422356" duration="42000" />
       <workItem from="1657632061347" duration="3883000" />
       <workItem from="1657722721589" duration="4299000" />
-      <workItem from="1657807907271" duration="664000" />
+      <workItem from="1657807907271" duration="1930000" />
     </task>
     <servers />
   </component>
@@ -92,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="programação defensiva e BoardException" />
+    <option name="LAST_COMMIT_MESSAGE" value="programação defensiva e BoardException" />
   </component>
 </project>

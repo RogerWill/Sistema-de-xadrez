@@ -35,7 +35,7 @@ public class Tabuleiro {
     }
 
     public void colocarPeca(Peca peca, Posicao posicao){
-        if(posicaoExiste(posicao)){
+        if(existePeca(posicao)){
             throw new BoardException("Ja existe uma peca nessa posição" + posicao);
         }
         pecas[posicao.getLinha()][posicao.getColuna()] = peca;
