@@ -7,7 +7,7 @@
     <list default="true" id="d28555a2-907d-4e31-88b3-05ca7ab368c0" name="Changes" comment="programação defensiva e BoardException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Jogo/Peca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogo/Peca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pecas/Xadrez/Rei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pecas/Xadrez/Rei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jogo/Posicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogo/Posicao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pecas/Xadrez/Torre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pecas/Xadrez/Torre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Xadrez/PartidaXadrez.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xadrez/PartidaXadrez.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Xadrez/PecaXadrez.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Xadrez/PecaXadrez.java" afterDir="false" />
@@ -79,7 +79,7 @@
       <workItem from="1657632061347" duration="3883000" />
       <workItem from="1657722721589" duration="4299000" />
       <workItem from="1657807907271" duration="4200000" />
-      <workItem from="1657895071976" duration="2240000" />
+      <workItem from="1657895071976" duration="4207000" />
     </task>
     <servers />
   </component>

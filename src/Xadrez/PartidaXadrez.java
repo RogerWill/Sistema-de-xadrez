@@ -29,6 +29,7 @@ public class PartidaXadrez{
         Posicao inicial = posicaoInicial.paraPosicao();
         Posicao alvo = posicaoAlvo.paraPosicao();
         validarPosicaoInicial(inicial);
+        validarPosicaoAlvo(inicial, alvo);
         Peca pecaCapturada = movimento(inicial, alvo);
         return (PecaXadrez) pecaCapturada;
     }
@@ -43,8 +44,14 @@ public class PartidaXadrez{
         if(!tabuleiro.posicaoExiste(posicao)){
             throw new ChessException("não existe peca na posição de origem");
         }
-        if(tabuleiro.peca(posicao).existeAlgumMovimento()){
+        if(!tabuleiro.peca(posicao).existeAlgumMovimento()){
             throw new ChessException("não existe movimentos possiveis para a peca escolhida");
+        }
+    }
+
+    private void validarPosicaoAlvo(Posicao inicial, Posicao alvo){
+        if(!tabuleiro.peca(inicial).movimentoPossivel(alvo)){
+            throw new ChessException("a peça escolhida não pode se mover para posição de destino");
         }
     }
     private void colocarNovaPeca(char coluna, int linha, PecaXadrez peca){

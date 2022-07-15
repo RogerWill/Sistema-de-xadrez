@@ -13,7 +13,7 @@ public abstract class Peca {
         return tabuleiro;
     }
 
-    public abstract boolean[][] movimentosPossiveis()
+    public abstract boolean[][] movimentosPossiveis();
 
     public boolean movimentoPossivel(Posicao posicao){
         return movimentosPossiveis()[posicao.getLinha()][posicao.getColuna()];

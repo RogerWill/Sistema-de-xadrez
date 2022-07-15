@@ -14,7 +14,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         PartidaXadrez partidaXadrez = new PartidaXadrez();
-        UI.printTabuleiro(partidaXadrez.getPecas());
 
         while(true){
             try {
