@@ -6,7 +6,7 @@ import Jogo.Tabuleiro;
 import Pecas.Xadrez.Rei;
 import Pecas.Xadrez.Torre;
 
-public class PartidaXadrez {
+public class PartidaXadrez{
 
     private Tabuleiro tabuleiro;
 
@@ -42,6 +42,9 @@ public class PartidaXadrez {
     private void validarPosicaoInicial(Posicao posicao){
         if(!tabuleiro.posicaoExiste(posicao)){
             throw new ChessException("não existe peca na posição de origem");
+        }
+        if(tabuleiro.peca(posicao).existeAlgumMovimento()){
+            throw new ChessException("não existe movimentos possiveis para a peca escolhida");
         }
     }
     private void colocarNovaPeca(char coluna, int linha, PecaXadrez peca){
