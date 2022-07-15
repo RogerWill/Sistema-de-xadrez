@@ -24,6 +24,26 @@ public class PartidaXadrez {
         }
         return mat;
     }
+
+    public PecaXadrez movimentoXadrez(PosicaoXadrez posicaoInicial, PosicaoXadrez posicaoAlvo){
+        Posicao inicial = posicaoInicial.paraPosicao();
+        Posicao alvo = posicaoAlvo.paraPosicao();
+        validarPosicaoInicial(inicial);
+        Peca pecaCapturada = movimento(inicial, alvo);
+        return (PecaXadrez) pecaCapturada;
+    }
+    private Peca movimento(Posicao inicial, Posicao alvo){
+        Peca p = tabuleiro.removerPeca(inicial);
+        Peca pecaCapturada = tabuleiro.removerPeca(alvo);
+        tabuleiro.colocarPeca(p, alvo);
+        return pecaCapturada;
+    }
+
+    private void validarPosicaoInicial(Posicao posicao){
+        if(!tabuleiro.posicaoExiste(posicao)){
+            throw new ChessException("não existe peca na posição de origem");
+        }
+    }
     private void colocarNovaPeca(char coluna, int linha, PecaXadrez peca){
         tabuleiro.colocarPeca(peca, new PosicaoXadrez(coluna, linha).paraPosicao());
     }
